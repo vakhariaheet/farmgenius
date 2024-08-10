@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"reportSummary\": {\n    \"criticalIssues\": [\n      \"Low nitrogen levels\",\n      \"Low phosphorus levels\",\n      \"Low potassium levels\",\n      \"Low magnesium levels\",\n      \"Low sulfur levels\"\n    ],\n    \"keyIndicators\": {\n      \"pH\": {\n        \"currentValue\": 6.6,\n        \"idealRange\": {\n          \"min\": 6.0,\n          \"max\": 7.0\n        },\n        \"status\": \"optimal\",\n        \"subclass\": \"mildly acidic\",\n        \"organicTips\": [\n          \"Maintain pH in the optimal range by using balanced organic fertilizers.\"\n        ]\n      },\n      \"nitrogen\": {\n        \"currentValue\": 3,\n        \"idealRange\": {\n          \"min\": 20,\n          \"max\": 40\n        },\n        \"status\": \"low\",\n        \"subclass\": \"very low\",\n        \"organicTips\": [\n          \"Apply compost or manure tea regularly.\",\n          \"Plant nitrogen-fixing cover crops like clover or alfalfa.\",\n          \"Topdress with feather meal or blood meal for a quick nitrogen boost.\"\n        ]\n      },\n      \"phosphorus\": {\n        \"currentValue\": 3,\n        \"idealRange\": {\n          \"min\": 40,\n          \"max\": 60\n        },\n        \"status\": \"low\",\n        \"subclass\": \"very low\",\n        \"organicTips\": [\n          \"Incorporate bone meal or rock phosphate into the soil before planting.\",\n          \"Use compost or manure that is rich in phosphorus.\"\n        ]\n      },\n      \"potassium\": {\n        \"currentValue\": 40,\n        \"idealRange\": {\n          \"min\": 100,\n          \"max\": 150\n        },\n        \"status\": \"low\",\n        \"subclass\": \"very low\",\n        \"organicTips\": [\n          \"Add wood ash or kelp meal to the soil.\",\n          \"Use potassium-rich compost or manure tea.\"\n        ]\n      },\n      \"magnesium\": {\n        \"currentValue\": 41,\n        \"idealRange\": {\n          \"min\": 60,\n          \"max\": 80\n        },\n        \"status\": \"low\",\n        \"subclass\": \"low\",\n        \"organicTips\": [\n          \"Apply Epsom salt or langbeinite to increase magnesium levels.\"\n        ]\n      },\n      \"sulfur\": {\n        \"currentValue\": 3,\n        \"idealRange\": {\n          \"min\": 15,\n          \"max\": 30\n        },\n        \"status\": \"low\",\n        \"subclass\": \"low\",\n        \"organicTips\": [\n          \"Add gypsum or elemental sulfur to the soil.\"\n        ]\n      }\n    }\n  },\n  \"organicRecommendations\": {\n    \"organicFertilizers\": [\n      {\n        \"name\": \"Compost\",\n        \"amount\": 1,\n        \"unit\": \"cubic yard\",\n        \"frequency\": \"Annually\"\n      },\n      {\n        \"name\": \"Manure tea\",\n        \"amount\": 5,\n        \"unit\": \"gallons\",\n        \"frequency\": \"Every 2 weeks\"\n      },\n      {\n        \"name\": \"Feather meal\",\n        \"amount\": 5,\n        \"unit\": \"pounds per 100 square feet\",\n        \"frequency\": \"As needed for nitrogen boost\"\n      },\n      {\n        \"name\": \"Bone meal\",\n        \"amount\": 10,\n        \"unit\": \"pounds per 100 square feet\",\n        \"frequency\": \"At planting\"\n      },\n      {\n        \"name\": \"Wood ash\",\n        \"amount\": 1,\n        \"unit\": \"cup\",\n        \"frequency\": \"Per plant, annually\"\n      },\n      {\n        \"name\": \"Epsom salt\",\n        \"amount\": 1,\n        \"unit\": \"tablespoon\",\n        \"frequency\": \"Per gallon of water, every 2 weeks\"\n      },\n      {\n        \"name\": \"Gypsum\",\n        \"amount\": 5,\n        \"unit\": \"pounds per 100 square feet\",\n        \"frequency\": \"Annually\"\n      }\n    ],\n    \"organicPractices\": [\n      {\n        \"name\": \"Cover cropping\",\n        \"implementation\": \"Plant a cover crop mixture of clover, alfalfa, and winter rye in the fall.\",\n        \"benefits\": \"Improves soil fertility, fixes nitrogen, and suppresses weeds.\"\n      },\n      {\n        \"name\": \"No-till farming\",\n        \"implementation\": \"Avoid tilling the soil to preserve soil structure and microbial activity.\",\n        \"benefits\": \"Reduces erosion, improves water infiltration, and increases organic matter.\"\n      },\n      {\n        \"name\": \"Crop rotation\",\n        \"implementation\": \"Rotate crops with different nutrient needs to break pest cycles and improve soil health.\",\n        \"benefits\": \"Reduces pest and disease pressure, improves nutrient cycling, and reduces the need for synthetic fertilizers.\"\n      }\n    ]\n  },\n  \"organicActionPlan\": {\n    \"immediateOrganicActions\": [\n      \"Apply compost or manure tea to provide a quick boost of nutrients.\",\n      \"Topdress with feather meal or blood meal for immediate nitrogen needs.\"\n    ],\n    \"shortTermOrganicActions\": [\n      \"Plant a cover crop mixture in the fall to improve soil fertility and fix nitrogen.\",\n      \"Begin incorporating bone meal, wood ash, and Epsom salt into the soil to address phosphorus, potassium, and magnesium deficiencies.\"\n    ],\n    \"longTermOrganicActions\": [\n      \"Adopt no-till farming practices to improve soil structure and microbial activity.\",\n      \"Implement a crop rotation plan to enhance nutrient cycling and reduce pest pressure.\",\n      \"Regularly monitor soil health and adjust organic practices accordingly.\"\n    ]\n  },\n  \"additionalOrganicResources\": [\n    {\n      \"name\": \"National Organic Program\",\n      \"url\": \"https://www.ams.usda.gov/organic-certification\"\n    },\n    {\n      \"name\": \"The Rodale Institute\",\n      \"url\": \"https://www.rodaleinstitute.org/\"\n    }\n  ]\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE"
+        }
+      ]
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 630,
+    "candidatesTokenCount": 1421,
+    "totalTokenCount": 2051
+  }
+}

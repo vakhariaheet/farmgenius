@@ -1,0 +1,116 @@
+
+{
+  "report_summary": {
+    "critical_issues": [
+      "Nitrogen and potassium levels are very low.",
+      "Magnesium levels require attention."
+    ],
+    "key_indicators": {
+      "pH": {
+        "current_value": 6.6,
+        "ideal_range": {
+          "min": 6.0,
+          "max": 7.0
+        },
+        "status": "moderate",
+        "subclass": "mildly acidic",
+        "organic_tips_for_improvement": [
+          "Consider adding lime to raise pH if needed."
+        ]
+      },
+      "nitrogen": {
+        "current_value": 3.0,
+        "ideal_range": {
+          "min": 15.0,
+          "max": 30.0
+        },
+        "status": "very low",
+        "organic_tips_for_improvement": [
+          "Topdress with additional nitrogen every 4 to 6 weeks."
+        ]
+      },
+      "phosphorus": {
+        "current_value": 3.0,
+        "ideal_range": {
+          "min": 15.0,
+          "max": 30.0
+        },
+        "status": "very low",
+        "organic_tips_for_improvement": [
+          "Use bone meal or rock phosphate."
+        ]
+      },
+      "potassium": {
+        "current_value": 40.0,
+        "ideal_range": {
+          "min": 100.0,
+          "max": 200.0
+        },
+        "status": "low",
+        "organic_tips_for_improvement": [
+          "Apply potassium magnesium sulfate annually."
+        ]
+      },
+      "magnesium": {
+        "current_value": 41.0,
+        "ideal_range": {
+          "min": 50.0,
+          "max": 100.0
+        },
+        "status": "low",
+        "organic_tips_for_improvement": [
+          "Consider applying magnesium sulfate."
+        ]
+      }
+    }
+  },
+  "organic_recommendations": {
+    "organic_fertilizers": [
+      {
+        "name": "Fish emulsion",
+        "amount": 60.0,
+        "unit": "lbs/a",
+        "frequency": "every 4-6 weeks"
+      },
+      {
+        "name": "Bone meal",
+        "amount": 15.0,
+        "unit": "lbs/a",
+        "frequency": "once in spring"
+      }
+    ],
+    "organic_practices": [
+      {
+        "name": "Crop rotation",
+        "implementation": "Rotate crops periodically to improve soil health.",
+        "benefits": "Reduces soil nutrient depletion and pest buildup."
+      },
+      {
+        "name": "Cover cropping",
+        "implementation": "Plant cover crops during off-seasons.",
+        "benefits": "Improves soil structure and nutrient content."
+      }
+    ]
+  },
+  "organic_action_plan": {
+    "immediate_organic_actions": [
+      "Topdress with nitrogen fertilizer."
+    ],
+    "short_term_organic_actions": [
+      "Apply magnesium sulfate to address low magnesium levels."
+    ],
+    "long_term_organic_actions": [
+      "Implement a comprehensive soil amendment plan based on soil testing."
+    ]
+  },
+  "additional_organic_resources": [
+    {
+      "name": "Sustainable Agriculture Research and Education (SARE)",
+      "url": "https://www.sare.org"
+    },
+    {
+      "name": "USDA Organic Agriculture",
+      "url": "https://www.ams.usda.gov/rules-regulations/organic"
+    }
+  ]
+}

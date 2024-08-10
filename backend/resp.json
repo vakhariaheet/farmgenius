@@ -1,0 +1,124 @@
+{
+	"report_summary": {
+		"critical_issues": ["Low nutrient levels", "Low magnesium levels"],
+		"key_indicators": {
+			"pH": {
+				"current_value": 6.6,
+				"ideal_range": { "min": 6.0, "max": 7.0 },
+				"status": "optimal",
+				"subclass": "mildly acidic",
+				"organic_tips": [
+					"Maintain a healthy soil microbiome with organic matter additions like compost and manure."
+				]
+			},
+			"nitrogen": {
+				"current_value": 3,
+				"ideal_range": { "min": 50, "max": 100 },
+				"status": "low",
+				"subclass": "very low",
+				"organic_tips": [
+					"Use nitrogen-fixing cover crops such as legumes to naturally enhance soil nitrogen levels.",
+					"Apply compost or manure to increase organic matter and improve nitrogen availability."
+				]
+			},
+			"phosphorus": {
+				"current_value": 3,
+				"ideal_range": { "min": 20, "max": 50 },
+				"status": "low",
+				"subclass": "very low",
+				"organic_tips": [
+					"Incorporate phosphorus-rich organic materials like bone meal, rock phosphate, or composted manure."
+				]
+			},
+			"potassium": {
+				"current_value": 40,
+				"ideal_range": { "min": 50, "max": 100 },
+				"status": "low",
+				"subclass": "very low",
+				"organic_tips": [
+					"Apply potassium-rich organic fertilizers such as wood ash, kelp meal, or composted manure."
+				]
+			},
+			"magnesium": {
+				"current_value": 41,
+				"ideal_range": { "min": 50, "max": 100 },
+				"status": "low",
+				"subclass": "low",
+				"organic_tips": [
+					"Utilize magnesium-rich amendments like Epsom salt or dolomite lime."
+				]
+			}
+		}
+	},
+	"organic_recommendations": {
+		"organic_fertilizers": [
+			{
+				"name": "Compost",
+				"amount": "100-200",
+				"unit": "lbs/acre",
+				"frequency": "Annually"
+			},
+			{
+				"name": "Manure",
+				"amount": "50-100",
+				"unit": "lbs/acre",
+				"frequency": "Annually"
+			},
+			{
+				"name": "Bone Meal",
+				"amount": "20-40",
+				"unit": "lbs/acre",
+				"frequency": "Annually"
+			},
+			{
+				"name": "Kelp Meal",
+				"amount": "20-40",
+				"unit": "lbs/acre",
+				"frequency": "Annually"
+			}
+		],
+		"organic_practices": [
+			{
+				"name": "Cover Cropping",
+				"implementation": "Planting non-cash crops to protect and enrich the soil.",
+				"benefits": "Improved soil structure, increased organic matter, and reduced erosion"
+			},
+			{
+				"name": "No-Till Farming",
+				"implementation": "Minimizing soil disturbance through direct seeding.",
+				"benefits": "Improved soil health, reduced erosion, and increased soil carbon sequestration"
+			},
+			{
+				"name": "Crop Rotation",
+				"implementation": "Alternating different crops each growing season.",
+				"benefits": "Improved soil fertility, reduced pest and disease pressure, and increased biodiversity"
+			}
+		]
+	},
+	"organic_action_plan": {
+		"immediate_organic_actions": [
+			"Implement cover cropping with nitrogen-fixing legumes like clover or alfalfa."
+		],
+		"short_term_organic_actions": [
+			"Apply compost or manure to improve soil fertility and organic matter content."
+		],
+		"long_term_organic_actions": [
+			"Transition to no-till farming to improve soil structure and reduce erosion.",
+			"Adopt a crop rotation system to enhance soil health and suppress pests and diseases."
+		]
+	},
+	"additional_organic_resources": [
+		{
+			"name": "The Organic Farming Research Foundation",
+			"url": "https://www.ofrf.org/"
+		},
+		{
+			"name": "The Rodale Institute",
+			"url": "https://www.rodaleinstitute.org/"
+		},
+		{
+			"name": "The Organic Materials Review Institute",
+			"url": "https://www.omri.org/"
+		}
+	]
+}
