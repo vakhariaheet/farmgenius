@@ -10,7 +10,6 @@ const TranslateReport = async (req: Request, res: Response) => {
     if (!report) {
         return res.status(400).send('No file uploaded.');
     }
-    console.log('Hellooooofds')
     const resp = await getChatGPTResponse(TRANSLATE_REPORT, [ await ImageUpload(report) ]);
     
     return sendResponse({

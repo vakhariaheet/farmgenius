@@ -39,6 +39,10 @@ dependencies:
   dio: ^5.5.0+1
   lottie: ^3.1.2
   bulleted_list: ^0.0.1+0.1a
+  flutter_native_splash: ^2.4.1
+  rename_app: ^1.6.1
+  location: ^6.0.2
+  permission_handler: ^11.3.1
 
 dev_dependencies:
   flutter_test:
@@ -91,3 +95,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+flutter_native_splash:
+  background_image: lib/assets/SplashScreen.png

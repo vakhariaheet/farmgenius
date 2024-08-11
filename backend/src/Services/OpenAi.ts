@@ -1,6 +1,7 @@
 import { TRANSLATE_REPORT } from '@/constants/prompts';
 import { RequestFile } from '@/types';
 import cloudinary from 'cloudinary';
+import { writeFile } from 'fs/promises';
 import OpenAi from 'openai';
 const openai = new OpenAi();
 
@@ -25,21 +26,22 @@ export const getChatGPTResponse = async (
                 {
                     role: 'user',
                     content: [
-                        { type: 'text', text: TRANSLATE_REPORT },
-                        {
+                        { type: 'text', text: prompt },
+                        // @ts-ignore
+                        ...attachments.map((attachment) => ({
                             type: 'image_url',
                             image_url: {
-                                url: attachments[ 0 ].url,
-                                detail:'auto'
+                                url: attachment.url,
+                               
                             }
-                        }
+                        }))
                     ],
                 },
             ],
         });
         
-        
-        console.log(response.choices[ 0 ]);
+        writeFile('response.json', JSON.stringify(response, null, 2));
+     
         
         return response.choices[ 0 ].message.content?.split('```json')[1].split('```')[0];
     }
