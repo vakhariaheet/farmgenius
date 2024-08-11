@@ -232,7 +232,7 @@ class _ReportInfoState extends State<ReportInfo> {
                                 children: soilReport
                                     .get('report_summary.key_indicators')
                                     .keys
-                                    .map<Widget>((key) {
+                                    ?.map<Widget>((key) {
                                   return Container(
                                     decoration: BoxDecoration(
                                       color: getCardBgColor(soilReport.get(
@@ -355,7 +355,7 @@ class _ReportInfoState extends State<ReportInfo> {
                                                             children: soilReport
                                                                 .get(
                                                                     'report_summary.key_indicators.$key.organic_tips_for_improvement')
-                                                                .map<Widget>(
+                                                                ?.map<Widget>(
                                                                     (tip) {
                                                               return ListTile(
                                                                 leading:

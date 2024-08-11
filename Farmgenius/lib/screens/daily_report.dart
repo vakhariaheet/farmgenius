@@ -6,7 +6,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:location/location.dart';
 
 class DailyReport extends StatefulWidget {
   const DailyReport({super.key});
@@ -19,57 +18,28 @@ class _DailyReportState extends State<DailyReport> {
   List<XFile> _imageFiles = <XFile>[];
   bool isReport = false;
   bool isLoading = false;
-  bool isLocationEnabled = false;
-  PermissionStatus isLocationPermissionGranted = PermissionStatus.denied;
-
-  @override
-  void initState() {
-    super.initState();
-    checkLocationPermission();
-  }
-
-  void checkLocationPermission() async {
-    final Location location = Location();
-    isLocationEnabled = await location.serviceEnabled();
-    isLocationPermissionGranted = await location.hasPermission();
-    if (!isLocationEnabled) {
-      isLocationEnabled = await location.requestService();
-    }
-    if (isLocationPermissionGranted == PermissionStatus.denied) {
-      isLocationPermissionGranted = await location.requestPermission();
-    }
-  }
 
   generateReport() async {
     setState(() {
       isLoading = true;
     });
-    // Get the location
-    final Location location = Location();
-    final LocationData locationData = await location.getLocation();
-    print(locationData);
+    // Call the API to generate the report
+    FormData formData = FormData.fromMap({
+      'images': _imageFiles.map((e) => MultipartFile.fromFileSync(e.path)).toList()
+    });
 
-    // // Call the API to generate the report
-    // FormData formData = FormData.fromMap({
-    //   'images':
-    //       _imageFiles.map((e) => MultipartFile.fromFileSync(e.path)).toList()
-    // });
-
-    // // Use the Dio package to make the API call
-    // final resp = await ApiService().post(
-    //     'ai/daily-report',
-    //     formData,
-    //     false,
-    //     Options(headers: {
-    //       'Content-Type': 'multipart/form-data',
-    //     }));
-    // print(resp);
-    // setState(() {
-    //   isLoading = false;
-    //   isReport = true;
-    // });
+    // Use the Dio package to make the API call
+    final resp  = await ApiService().post('ai/daily-report',formData,false,Options(
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      }
+    ));  
+    print(resp);        
+    setState(() {
+      isLoading = false;
+      isReport = true;
+    });
   }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -188,7 +158,7 @@ class _DailyReportState extends State<DailyReport> {
                       },
                     ),
                     ElevatedButton(
-                      onPressed: generateReport,
+                      onPressed:generateReport,
                       child: const Text('Generate'),
                     ),
                   ],
